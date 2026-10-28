@@ -51,14 +51,14 @@ h2{font-size:32px;color:#f5d8ff;margin:8px 0 18px}p{font-size:18px;line-height:1
 <h2>📸 FELICITACIONES 🤍</h2>
 <p class="edit" contenteditable="true">Es usted una persona maravillosa y muy carismática 😇.</p>
 <div class="gallery" id="gallery">
-<button class="photo" onclick="openLightbox(0)" aria-label="Ampliar foto 1"><img src="Foto1.webp" alt="Recuerdo 1"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(1)" aria-label="Ampliar foto 2"><img src="Foto%202.webp" alt="Recuerdo 2"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(2)" aria-label="Ampliar foto 3"><img src="Foto%203.webp" alt="Recuerdo 3"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(3)" aria-label="Ampliar foto 4"><img src="Foto%204.webp" alt="Recuerdo 4"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(4)" aria-label="Ampliar foto 5"><img src="Foto%205.webp" alt="Recuerdo 5"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(5)" aria-label="Ampliar foto 6"><img src="Foto%206.webp" alt="Recuerdo 6"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(6)" aria-label="Ampliar foto 7"><img src="Foto%208.webp" alt="Recuerdo 7"><span>♡</span></button>
-<button class="photo" onclick="openLightbox(7)" aria-label="Ampliar foto 8"><img src="Foto%209.webp" alt="Recuerdo 8"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(0)" aria-label="Ampliar foto 1"><img src="20231102_135003.jpg" alt="Recuerdo 1"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(1)" aria-label="Ampliar foto 2"><img src="20240717_204654.jpg" alt="Recuerdo 2"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(2)" aria-label="Ampliar foto 3"><img src="20240816_204140.jpg" alt="Recuerdo 3"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(3)" aria-label="Ampliar foto 4"><img src="FB_IMG_1730133336373.jpg" alt="Recuerdo 4"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(4)" aria-label="Ampliar foto 5"><img src="FB_IMG_1730133342269.jpg" alt="Recuerdo 5"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(5)" aria-label="Ampliar foto 6"><img src="FB_IMG_1730133355682.jpg" alt="Recuerdo 6"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(6)" aria-label="Ampliar foto 7"><img src="FB_IMG_1749161967004.jpg" alt="Recuerdo 7"><span>♡</span></button>
+<button class="photo" onclick="openLightbox(7)" aria-label="Ampliar foto 8"><img src="IMG_20240902_204810_401.webp" alt="Recuerdo 8"><span>♡</span></button>
 </div>
 <button class="btn" onclick="go(4)">💌 Leer el mensaje final</button>
 </div></section>
@@ -79,7 +79,7 @@ h2{font-size:32px;color:#f5d8ff;margin:8px 0 18px}p{font-size:18px;line-height:1
 <audio id="musica" src="music.mp3" preload="auto" loop></audio>
 <script>
 // IMPORTANTE: los nombres deben coincidir exactamente con los archivos subidos al repositorio.
-const photos=['Foto1.webp','Foto 2.webp','Foto 3.webp','Foto 4.webp','Foto 5.webp','Foto 6.webp','Foto 8.webp','Foto 9.webp'];
+const photos=['20231102_135003.jpg','20240717_204654.jpg','20240816_204140.jpg','FB_IMG_1730133336373.jpg','FB_IMG_1730133342269.jpg','FB_IMG_1730133355682.jpg','FB_IMG_1749161967004.jpg','IMG_20240902_204810_401.webp'];
 function confetti(n=180){const c=document.getElementById('confetti');c.innerHTML='';for(let i=0;i<n;i++){const x=document.createElement('i');x.style.left=Math.random()*100+'%';x.style.animationDelay=(Math.random()*1.2)+'s';x.style.background=['#f8d477','#f472b6','#8b5cf6','#60a5fa','#fff'][Math.floor(Math.random()*5)];x.style.transform='rotate('+Math.random()*360+'deg)';c.appendChild(x)}setTimeout(()=>c.innerHTML='',4500)}
 function go(n){for(let i=1;i<=4;i++)document.getElementById('s'+i).classList.add('hidden');document.getElementById('s'+n).classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})}
 function reveal(){confetti();go(2);setTimeout(()=>document.getElementById('bar').style.width='100%',100);}
